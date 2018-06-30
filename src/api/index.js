@@ -3,9 +3,9 @@ import Vue from 'vue'
 import {
   LoginApi,
   RegApi,
-  MenuApi,
+  HeadApi,
   BannerApi
-} from './Api'
+} from './resource'
 
 export default {
   /**
@@ -13,7 +13,7 @@ export default {
    * @param 账号、密码
    * @returns status:success
    */
-  getLoginApi(account, password) {
+  getLoginResource(account, password) {
     return Vue.prototype.$http.post(LoginApi)
   },
 
@@ -22,18 +22,18 @@ export default {
    * @param 账号、密码、手机号
    * @returns status:success
    */
-  getRegApi(account, password, cellphone) {
+  getRegResource(account, password, cellphone) {
     return Vue.prototype.$http.post(RegApi)
   },
 
   /**
-   * @title: 获取menu数据
+   * @title: 获取head数据
    * @method post
    * @param ''
    * @returns status:success
    */
-  getMenu() {
-    return Vue.prototype.$http.post(MenuApi)
+  getHeadResource() {
+    return Vue.prototype.$http.post(HeadApi)
   },
 
   /**
@@ -42,7 +42,7 @@ export default {
    * @param ''
    * @returns status:success
    */
-  getBanner() {
+  getBannerResource() {
     return Vue.prototype.$http.post(BannerApi)
   }
 }
