@@ -7,7 +7,7 @@
         <span class="hello">, hello</span>
       </div>
       <router-link
-        class="iconfont icon-settings_light f30"
+        class="setting zui-icon zui-icon-setting"
         :to="{
 					name: 'mySetting'
 				}">

@@ -1,4 +1,3 @@
-/*********** index  **********/
 // shop
 export const shop = {
   logo: '/static/img/life-index-logo.png',
@@ -9,603 +8,73 @@ export const shop = {
   }
 }
 
-// cat
-export const shopCat = [
+// 首页菜单
+export const mealMenu = [
   {
-    id: 'chaju',
     // img: '/static/img/chaju.png',
     svg: '#icon-xigua',
-    text: '食材订购'
+    text: '食材订购',
+    link: 'order'
   },
   {
-    id: 'jiuju',
     svg: '#icon-jiezi',
-    text: '食材签收'
+    text: '食材签收',
+    link: 'accept'
   },
   {
-    id: 'chuanping',
     // img: '/static/img/chuanping.png',
     svg: '#icon-pingguo',
-    text: '食材出库'
+    text: '食材出库',
+    link: 'ingredientsOut'
   },
   {
-    id: 'huaqi',
     // img: '/static/img/huaqi.png',
     svg: '#icon-guamian',
-    text: '营养出餐'
+    text: '营养出餐',
+    link: 'mealsOut'
   },
   {
-    id: 'canju',
     // img: '/static/img/canju.png',
     svg: '#icon-lizhi',
-    text: '结算统计'
-  },{
-    id: 'chaju',
+    text: '盘存统计',
+    link: 'statistics'
+  },
+  {
     // img: '/static/img/chaju.png',
     svg: '#icon-li',
-    text: '食材订购'
+    text: '食材订购',
+    link: 'order'
   },
   {
-    id: 'jiuju',
     svg: '#icon-mangguo',
-    text: '食材签收'
+    text: '食材签收',
+    link: 'accept'
   },
   {
-    id: 'chuanping',
     // img: '/static/img/chuanping.png',
     svg: '#icon-mihoutao',
-    text: '食材出库'
+    text: '食材出库',
+    link: 'ingredientsOut'
   },
   {
-    id: 'huaqi',
     // img: '/static/img/huaqi.png',
     svg: '#icon-mogu',
-    text: '营养出餐'
+    text: '营养出餐',
+    link: 'mealsOut'
   },
   {
-    id: 'canju',
     // img: '/static/img/canju.png',
     svg: '#icon-yangcong',
-    text: '结算统计'
+    text: '结算统计',
+    link: 'statistics'
   }
 ]
 
-// floor one
-export const floor1 = [
-  {
-    id: 'a',
-    img: 'https://o5omsejde.qnssl.com/demo/test1.jpg',
-    title: '发现生活中的美',
-  },
-  {
-    id: 'b',
-    img: 'https://o5omsejde.qnssl.com/demo/test2.jpg',
-    title: '发现生活中的美',
-  },
-  {
-    img: 'https://o5omsejde.qnssl.com/demo/test4.jpg',
-    title: '发现生活中的美',
-  },
-  {
-    img: 'https://o5omsejde.qnssl.com/demo/test5.jpg',
-    title: '发现生活中的美',
-  },
-  {
-    img: 'https://o5omsejde.qnssl.com/demo/test6.jpg',
-    title: '发现生活中的美',
-  },
-  {
-    img: 'https://o5omsejde.qnssl.com/demo/test7.jpg',
-    title: '发现生活中的美',
-  }
-]
-
-//you like
-export const recommendGoods = [
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  }
-]
-
-
-/********** article **********/
-// articls
-export const articles = [
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    subtitle: '发现生活中的美发现生活中的美。',
-  },
-  {
-    id: 'b',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    subtitle: '发现生活中的美发现生活中的美。',
-  }
-]
-
-// article banner
-export const articleBanner = [
-  {
-    url: 'javascript:',
-    img: '/static/img/article-head.jpg',
-    title: '送你一辆车'
-  },
-  {
-    url: 'javascript:',
-    img: '/static/img/article-head.jpg',
-    title: '送你一辆车'
-  }
-]
-
-// article detail
-export const article = {
-  title: '极物商城文章极物商城馆章极物商城文章',
-  createAt: '2016-01-09',
-  author: '老王',
-  read: '222',
-  like: '333',
-  content: '文章极物商城文章极物商城文章极物商城文章极物商城文章馆文章xx'
-}
-
-// article recommend
-export const articleRecommend = [
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    subtitle: '发现生活中的美发现生活中的美。',
-  },
-  {
-    id: 'b',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    subtitle: '发现生活中的美发现生活中的美。',
-  }
-]
-
-// article goods
-export const articleGoods = [
-  {
-    img: '/static/img/good-default.jpg',
-    title: '原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造',
-    subInfo: '已售8888件',
-    price: '200.00'
-  },
-  {
-    img: '/static/img/good-default.jpg',
-    title: '原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造',
-    subInfo: '已售8888件',
-    price: '200.00'
-  }
-]
-
-/********* cat ************/
-// cat tag
-export const catTags = [
-  {
-    tag: 'chaju',
-    text: '茶具'
-  },
-  {
-    tag: 'jiuju',
-    text: '酒具'
-  },
-  {
-    tag: 'chuanping',
-    text: '床品'
-  },
-  {
-    tag: 'huaqi',
-    text: '花器'
-  },
-  {
-    tag: 'canju',
-    text: '餐具'
-  },
-  {
-    tag: 'chaju',
-    text: '茶具'
-  },
-  {
-    tag: 'jiuju',
-    text: '酒具'
-  },
-  {
-    tag: 'chuanping',
-    text: '床品'
-  },
-  {
-    tag: 'huaqi',
-    text: '花器'
-  },
-  {
-    tag: 'canju',
-    text: '餐具'
-  }
-]
-
-// cat result
-export const catResult = [
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  }
-]
-
-// cat banner
-export const catBanner = [
-  {
-    url: 'javascript:',
-    img: '/static/img/article-head.jpg',
-    title: '送你一辆车'
-  },
-  {
-    url: 'javascript:',
-    img: '/static/img/article-head.jpg',
-    title: '送你一辆车'
-  }
-]
-
-/********** comment *********/
-// comments
-export const comments = [
-  {
-    userLogo: '/static/img/life-index-logo.png',
-    userName: '张**飞',
-    createdAt: '2017-01-02',
-    goodScore: 3,
-    content: '完美的和押金啊分成三大发生多次的萨芬的发生打发十分撒发生撒旦法非官方大哥'
-  },
-  {
-    userLogo: '/static/img/life-index-logo.png',
-    userName: '张**飞',
-    createdAt: '2017-01-02',
-    goodScore: 2,
-    content: '完美的和押金啊分成三大发生多次的萨芬的发生打发十分撒发生撒旦法非官方大哥'
-  }
-]
-
-// cpmment post
-export const commentPost = {
-  goods: [
-    {
-      img: '/static/img/good-default.jpg',
-      title: '原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造',
-      subInfo: ['颜色:蓝色', '颜色:蓝色', '颜色:蓝色'],
-      price: '200.00',
-      num: '3'
-    },
-    {
-      img: '/static/img/good-default.jpg',
-      title: '原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造',
-      subInfo: ['颜色:蓝色', '颜色:蓝色', '颜色:蓝色'],
-      price: '200.00',
-      num: '3'
-    },
-  ],
-  rateTip: {
-    level5: '就好就极大愤慨的萨芬5',
-    level4: '就好就极大愤慨的萨芬4',
-    level3: '就好就极大愤慨的萨芬3',
-    level2: '就好就极大愤慨的萨芬2',
-    level1: '就好就极大愤慨的萨芬1',
-  }
-}
-
-
-/*********** good detail ***********/
-export const goodDetail = {
-  title: 'xx茶具茶具好美xx茶具茶具好美xx茶具茶具好美xx茶具茶具好美xx茶具茶具好美品茶具茶具好美',
-  price: '299',
-  soleNum: '888',
-  likeNum: '333',
-  brand: {
-    logo: '/static/img/life-index-logo.png',
-    title: '极物商城',
-    subtitle: '生活态度'
-  },
-  banners: [
-    '/static/img/banner-life.png',
-    '/static/img/banner-life.png',
-    '/static/img/banner-life.png',
-    '/static/img/banner-life.png'
-  ],
-  storeName: '极物商城',
-  content: '我是详情',
-  maxInventory: '999',
-  params: [
-    {
-      name: '颜色',
-      param: ['黑色', '红色', '蓝色', '白色']
-    },
-    {
-      name: '粗细',
-      param: ['粗', '细']
-    },
-    {
-      name: '大小',
-      param: ['xl', 'xxl', 's']
-    }
-  ],
-  commentsLength: '200',
-  commentsPart: [
-    {
-      userLogo: '/static/img/life-index-logo.png',
-      userName: '张**飞',
-      createdAt: '2017-01-02',
-      goodScore: 3,
-      content: '完美的和押金啊分成三大发生多次的萨芬的发生打发十分撒发生撒旦法非官方大哥'
-    },
-    {
-      userLogo: '/static/img/life-index-logo.png',
-      userName: '张**飞',
-      createdAt: '2017-01-02',
-      goodScore: 5,
-      content: '完美的和押金啊分成三大发生多次的萨芬的发生打发十分撒发生撒旦法非官方大哥'
-    }
-  ]
-}
-
-/*********** good pay ***********/
-// pay pill
-export const payPill = [
-  {
-    id: 'a',
-    name: '由极物商城发货',
-    goods: [
-      {
-        img: '/static/img/good-default.jpg',
-        title: '原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造',
-        subInfo: ['颜色:蓝色', '颜色:蓝色', '颜色:蓝色'],
-        price: '200.00',
-        num: '3'
-      },
-      {
-        img: '/static/img/good-default.jpg',
-        title: '原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造',
-        subInfo: ['颜色:蓝色', '颜色:蓝色', '颜色:蓝色'],
-        price: '200.00',
-        num: '1'
-      }
-    ],
-    sum: '599',
-    needPay: '599',
-    coupon: [
-      {
-        title: '注册有礼优惠50元',
-        amount: '50',
-        time: '2017.2.19-2017.3.1'
-      },
-      {
-        title: '注册有礼优惠60元',
-        amount: '60',
-        time: '2017.2.19-2017.3.1'
-      },
-      {
-        title: '注册有礼优惠70元',
-        amount: '70',
-        time: '2017.2.19-2017.3.1'
-      }
-    ],
-  },
-  {
-    id: 'b',
-    name: '由极物商城发货',
-    goods: [
-      {
-        img: '/static/img/good-default.jpg',
-        title: '原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造',
-        subInfo: ['颜色:蓝色', '颜色:蓝色', '颜色:蓝色'],
-        price: '200.00',
-        num: '3'
-      },
-      {
-        img: '/static/img/good-default.jpg',
-        title: '原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造原木打造',
-        subInfo: ['颜色:蓝色', '颜色:蓝色', '颜色:蓝色'],
-        price: '200.00',
-        num: '1'
-      }
-    ],
-    sum: '599',
-    needPay: '599',
-    coupon: [
-      {
-        title: '注册有礼优惠50元',
-        amount: '501',
-        time: '2017.2.19-2017.3.1'
-      },
-      {
-        title: '注册有礼优惠50元',
-        amount: '502',
-        time: '2017.2.19-2017.3.1'
-      },
-      {
-        title: '注册有礼优惠50元',
-        amount: '503',
-        time: '2017.2.19-2017.3.1'
-      }
-    ],
-  }
-]
-
-
-/******* good search *********/
-// search result
-export const searchResult = [
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  },
-  {
-    id: 'a',
-    img: '/static/img/article-default.png',
-    title: '发现生活中的美',
-    price: '998.00'
-  }
-]
-
-
-/************ userInfo *********/
 export const userInfo = {
-  logo: '/static/img/mine-logo-default.png',
-  name: '老王',
+  logo: '/static/img/avatar1.png',
+  name: 'freshzxf'
 }
 
-/************* address list ******/
 // address list
 export const userAddress = [
   {
@@ -638,124 +107,6 @@ export const userAddress = [
   }
 ]
 
-
-/******** coupon *********/
-// coupon
-export const timeoutCoupons = [
-  {
-    state: 'timeout',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-  {
-    state: 'timeout',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-  {
-    state: 'timeout',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-  {
-    state: 'timeout',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-  {
-    state: 'timeout',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-]
-
-export const unusefullCoupons = [
-  {
-    state: 'unusefull',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-  {
-    state: 'unusefull',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-  {
-    state: 'unusefull',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-  {
-    state: 'unusefull',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-  {
-    state: 'unusefull',
-    title: '注册有礼50元券',
-    amount: '50',
-    limitMsg: '满200可用',
-    validity: '2016.09.05-2016.10.31'
-  },
-]
-
-
-export const usefullCoupons = [
-  // {
-  // 	state: 'usefull',
-  // 	title: '注册有礼50元券',
-  // 	amount: '50',
-  // 	limitMsg: '满200可用',
-  // 	validity: '2016.09.05-2016.10.31'
-  // },
-  // {
-  // 	state: 'usefull',
-  // 	title: '注册有礼50元券',
-  // 	amount: '50',
-  // 	limitMsg: '满200可用',
-  // 	validity: '2016.09.05-2016.10.31'
-  // },
-  // {
-  // 	state: 'usefull',
-  // 	title: '注册有礼50元券',
-  // 	amount: '50',
-  // 	limitMsg: '满200可用',
-  // 	validity: '2016.09.05-2016.10.31'
-  // },
-  // {
-  // 	state: 'usefull',
-  // 	title: '注册有礼50元券',
-  // 	amount: '50',
-  // 	limitMsg: '满200可用',
-  // 	validity: '2016.09.05-2016.10.31'
-  // },
-  // {
-  // 	state: 'usefull',
-  // 	title: '注册有礼50元券',
-  // 	amount: '50',
-  // 	limitMsg: '满200可用',
-  // 	validity: '2016.09.05-2016.10.31'
-  // },
-]
-/*********** my like ************/
 // like list
 export const myLikes = [
   {
@@ -774,8 +125,6 @@ export const myLikes = [
   }
 ]
 
-
-/*********** my order ************/
 // order list
 export const myOrders = [
   {
@@ -925,8 +274,6 @@ export const myOrder = {
   ]
 }
 
-
-/********* user setting ************/
 // user setting
 export const userSettings = {
   logo: '/static/img/mine-logo-default.png',

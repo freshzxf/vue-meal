@@ -9,12 +9,10 @@
         </swiper>
       </div>
 
-      <cat-box
-        :cats="shopCat"
+      <menu-box
+        :cats="mealMenu"
         :title="'日常业务'">
-      </cat-box>
-
-      <divider class="unit">{{unit}}</divider>
+      </menu-box>
 
     </view-box>
 
@@ -22,14 +20,14 @@
 </template>
 <script>
   // banner和shop是单独从home.js的store中获取的值，这里之所以分开获取数据，是为了测试两种获取数据的方式
-  import {shopCat} from '../../data/data.js'
+  import {mealMenu} from '../../data/data.js'
 
-  import CatBox from '../../components/catBox.vue'
+  import MenuBox from '../../components/MenuBox.vue'
   import SaleFloor from '../../components/SaleFloor.vue'
   import Recommend from '../../components/Recommend.vue'
   import ScrollerBox from '../../components/ScrollerBox.vue'
   import GoodGrid from '../../components/GoodGrid.vue'
-  import {Swiper, SwiperItem, Popup, ViewBox, Divider} from 'vux'
+  import {Swiper, SwiperItem, Popup, ViewBox} from 'vux'
 
   require('./index.less')
   require('../../assets/svg/iconfont')
@@ -38,20 +36,18 @@
   export default {
     components: {
       Popup,
-      CatBox,
+      MenuBox,
       SaleFloor,
       Recommend,
       GoodGrid,
       Swiper,
       SwiperItem,
       ScrollerBox,
-      ViewBox,
-      Divider
+      ViewBox
     },
     data() {
       return {
-        shopCat: shopCat,
-        unit: '资源县羊场中学'
+        mealMenu: mealMenu
       }
     },
     created() {

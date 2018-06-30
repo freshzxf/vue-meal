@@ -1,17 +1,31 @@
+<style scoped>
+  .iconfont{font-size: 22px;padding-bottom: 5px}
+</style>
 <template>
-  <tabbar>
+  <tabbar >
     <tabbar-item
-      v-for="item in bottomBar"
-      :link="item.link">
+      v-for="(item,index) in bottomBar"
+      :link="item.link"
+      :key="index"
+      :selected="index == 0 ? true : false">
+
+      <!--非选中状态插槽icon-->
 			<span
         slot="icon"
-        class="zui-icon"
+        class="iconfont"
         :class="item.iconCls">
 			</span>
-      <span
+      <!--选中状态插槽icon-active-->
+			<span
+        slot="icon-active"
+        class="iconfont"
+        :class="item.iconActiveCls">
+			</span>
+
+      <label
         slot="label">
 				{{item.name}}
-			</span>
+			</label>
     </tabbar-item>
   </tabbar>
 </template>
@@ -29,21 +43,22 @@
         bottomBar: [
           {
             name: '首页',
-            iconCls: 'zui-icon-INDEX_1',
+            iconCls: 'icon-home_light',
+            iconActiveCls: 'icon-home_fill_light',
             link: 'index'
           },
           {
-            name: '购物车',
-            iconCls: 'zui-icon-SHOPPING-CART-EMPTY',
-            link: 'cart'
-          },
-          {
             name: '我的',
-            iconCls: 'zui-icon-MINE_1',
+            iconCls: 'icon-my_light',
+            iconActiveCls: 'icon-my_fill_light',
             link: 'mine'
           }
         ]
       }
+    },
+    computed: {
+    },
+    methods: {
     }
   }
 </script>

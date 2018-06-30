@@ -29,7 +29,7 @@ require('es6-promise').polyfill()
 Vue.use(AjaxPlugin)
 
 // 把数据api挂载到Vue全局对象原型上，以便Vue组件实例直接调用，而无需二次导入api
-Vue.prototype.api = api;
+Vue.prototype.api = api
 
 // 全局使用路由组件
 Vue.use(VueRouter)
