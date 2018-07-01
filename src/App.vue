@@ -1,6 +1,4 @@
-<!--所有模块公用样式-->
 <style lang="less">
-  /*公共*/
   @import './assets/css/common.less';
 </style>
 

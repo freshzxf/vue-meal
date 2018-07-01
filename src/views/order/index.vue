@@ -1,5 +1,9 @@
 <template>
   <div class="z-page">
+    <x-header :left-options="{backText: ''}" title="食材订购">
+      <span slot="right" class="iconfont icon-add_light f27"></span>
+    </x-header>
+
     <div class="mine-head-wrap">
       <img :src="userInfo.logo"/>
       <div class="mine-info">
@@ -120,7 +124,7 @@
 </template>
 <script>
   import {userInfo} from '../../data/data.js'
-  import {Badge, Cell, Group, Flexbox, FlexboxItem} from 'vux'
+  import {Badge, Cell, Group, Flexbox, FlexboxItem, XHeader} from 'vux'
   require('./index.less')
 
   export default {
@@ -129,7 +133,8 @@
       Group,
       Cell,
       FlexboxItem,
-      Flexbox
+      Flexbox,
+      XHeader
     },
     data() {
       return {

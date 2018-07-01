@@ -25,6 +25,8 @@ module.exports = {
     "no-spaced-func": 2,
     // 函数定义时括号前面要不要有空格
     "space-before-function-paren": [0, "always"],
+    // 注释风格要不要有空格什么的
+    "spaced-comment": 1,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }

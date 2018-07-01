@@ -5,8 +5,8 @@
     </div>
     <flexbox :gutter="0" wrap="wrap">
       <flexbox-item
-        :span="1/5"
-        v-for="item in cats">
+        :span="1/4"
+        v-for="item in datas">
         <router-link
           class="life-cat-item"
           :to="{
@@ -34,7 +34,7 @@
   import {Flexbox, FlexboxItem} from 'vux'
 
   export default {
-    props: ['cats', 'title'],
+    props: ['datas', 'title'],
     components: {
       Flexbox,
       FlexboxItem
@@ -43,8 +43,8 @@
 </script>
 <style scoped>
   .svg{
-    height: 50px;
-    width: 50px;
+    height: 68px;
+    width: 68px;
     margin-bottom: 10px;
     border-radius: 100%;
   }

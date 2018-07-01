@@ -8,64 +8,82 @@ export const shop = {
   }
 }
 
+// 顶部显示数据
+export const headShow = [
+  {
+    data: 38908,
+    text: '本月已订购',
+    link: '/'
+  }, {
+    data: 7560,
+    text: '本周已订购',
+    link: '/'
+  }, {
+    data: 1300,
+    text: '今日已订购',
+    link: '/'
+  },{
+    data: 12311,
+    text: '实时库存',
+    link: '/'
+  }, {
+    data: 2431,
+    text: '本周出库',
+    link: '/'
+  }, {
+    data: 378,
+    text: '今日出库',
+    link: '/'
+  }
+]
+
 // 首页菜单
 export const mealMenu = [
   {
     // img: '/static/img/chaju.png',
-    svg: '#icon-xigua',
+    svg: '#icon-shicaidinggou',
     text: '食材订购',
     link: 'order'
   },
   {
-    svg: '#icon-jiezi',
+    svg: '#icon-shicaiqianshou',
     text: '食材签收',
     link: 'accept'
   },
   {
     // img: '/static/img/chuanping.png',
-    svg: '#icon-pingguo',
+    svg: '#icon-shicaichuku',
     text: '食材出库',
     link: 'ingredientsOut'
   },
   {
     // img: '/static/img/huaqi.png',
-    svg: '#icon-guamian',
+    svg: '#icon-shangmenfuwu',
     text: '营养出餐',
     link: 'mealsOut'
   },
   {
     // img: '/static/img/canju.png',
-    svg: '#icon-lizhi',
+    svg: '#icon-pancunjiesuan',
     text: '盘存统计',
     link: 'statistics'
   },
   {
-    // img: '/static/img/chaju.png',
-    svg: '#icon-li',
-    text: '食材订购',
-    link: 'order'
-  },
-  {
-    svg: '#icon-mangguo',
-    text: '食材签收',
-    link: 'accept'
-  },
-  {
-    // img: '/static/img/chuanping.png',
-    svg: '#icon-mihoutao',
-    text: '食材出库',
-    link: 'ingredientsOut'
-  },
-  {
-    // img: '/static/img/huaqi.png',
-    svg: '#icon-mogu',
-    text: '营养出餐',
-    link: 'mealsOut'
+    // img: '/static/img/canju.png',
+    svg: '#icon-huiyuanguanli',
+    text: '就餐统计',
+    link: 'statistics'
   },
   {
     // img: '/static/img/canju.png',
-    svg: '#icon-yangcong',
-    text: '结算统计',
+    svg: '#icon-baobiaofenxi',
+    text: '报表统计',
+    link: 'statistics'
+  },
+  {
+    // img: '/static/img/canju.png',
+    svg: '#icon-zaixiankefu',
+    text: '工作电话',
     link: 'statistics'
   }
 ]

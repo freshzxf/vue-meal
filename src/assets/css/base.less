@@ -1,0 +1,38 @@
+// 定位
+.pr{position: relative}
+.pa{position: absolute}
+.pf{position: fixed}
+
+// 通用类
+.elip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ellip2 {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+// 字体大小: f12~f50
+.generate-font(@n, @i: 12) when (@i =< @n) {
+  .f@{i} {
+    font-size: unit(@i,px);
+  }
+  .generate-font(@n, (@i + 1));
+}
+.generate-font(50);
+
+// 下边距: mb5~mb50
+.generate-mb(@n, @i: 5) when (@i =< @n) {
+  .mb@{i} {
+    margin-bottom: unit(@i,px);
+  }
+  .generate-mb(@n, (@i + 1));
+}
+.generate-mb(50);

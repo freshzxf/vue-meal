@@ -1,67 +1,45 @@
 <template>
-  <div class="z-page">
-
+  <div class="z-page" style="background-color:#fff;">
     <view-box class="z-content">
 
-      <div class="life-index-banner">
-        <swiper
-          :list="mealBanner">
-        </swiper>
-      </div>
+      <!--顶部数据显示-->
+      <head-show
+        :datas="headShow">
+      </head-show>
 
+      <!--菜单组件-->
       <menu-box
-        :cats="mealMenu"
-        :title="'日常业务'">
+        :datas="mealMenu">
       </menu-box>
 
     </view-box>
-
   </div>
 </template>
 <script>
-  // banner和shop是单独从home.js的store中获取的值，这里之所以分开获取数据，是为了测试两种获取数据的方式
-  import {mealMenu} from '../../data/data.js'
-
+  import {headShow, mealMenu} from '../../data/data.js'
+  import HeadShow from '../../components/HeadShow.vue'
   import MenuBox from '../../components/MenuBox.vue'
-  import SaleFloor from '../../components/SaleFloor.vue'
-  import Recommend from '../../components/Recommend.vue'
-  import ScrollerBox from '../../components/ScrollerBox.vue'
-  import GoodGrid from '../../components/GoodGrid.vue'
-  import {Swiper, SwiperItem, Popup, ViewBox} from 'vux'
+  import {ViewBox} from 'vux'
 
+  // 首页less
   require('./index.less')
+  // svg菜单图标
   require('../../assets/svg/iconfont')
 
-  // import { mapGetters } from 'vuex';
   export default {
     components: {
-      Popup,
+      HeadShow,
       MenuBox,
-      SaleFloor,
-      Recommend,
-      GoodGrid,
-      Swiper,
-      SwiperItem,
-      ScrollerBox,
       ViewBox
     },
     data() {
       return {
+        headShow: headShow,
         mealMenu: mealMenu
       }
     },
-    created() {
-      this.initMealBanner()
-    },
-    computed: {
-      mealBanner() {
-        return this.$store.state.home.mealBanner
-      }
-    },
-    methods: {
-      initMealBanner() {
-        this.$store.dispatch('initMealBanner')
-      }
-    }
+    created() {},
+    computed: {},
+    methods: {}
   }
 </script>

@@ -1,24 +1,23 @@
 <style scoped>
-  .iconfont{font-size: 22px;padding-bottom: 5px}
 </style>
 <template>
   <tabbar >
+    <!--:selected="index == 0 ? true : false"-->
     <tabbar-item
       v-for="(item,index) in bottomBar"
       :link="item.link"
-      :key="index"
-      :selected="index == 0 ? true : false">
+      :key="index">
 
       <!--非选中状态插槽icon-->
 			<span
         slot="icon"
-        class="iconfont"
+        class="iconfont f20"
         :class="item.iconCls">
 			</span>
       <!--选中状态插槽icon-active-->
 			<span
         slot="icon-active"
-        class="iconfont"
+        class="iconfont f20"
         :class="item.iconActiveCls">
 			</span>
 
@@ -45,6 +44,11 @@
             name: '首页',
             iconCls: 'icon-home_light',
             iconActiveCls: 'icon-home_fill_light',
+            link: 'index'
+          },{
+            name: '客服',
+            iconCls: 'icon-community_light',
+            iconActiveCls: 'icon-community_fill_light',
             link: 'index'
           },
           {

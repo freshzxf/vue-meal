@@ -1,122 +1,33 @@
+// 导入'node_modules'目录下的'vux/src/styles/index.less'样式，包括如下
+// 'reset.less'; '1px.less'; 'center.less'; 'reddot.less'; 'transition.less'; 'loading.less'; 'close.less'; 'tap.less';
 @import '~vux/src/styles/index.less';
+// 导入基础原子样式
+@import 'base';
+// 导入字体图标
 @import '../fonts/iconfont.css';
 
+// reset
 html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
 }
-
 body {
   position: relative;
-  height: 100%;
   overflow-x: hidden;
-  background-color: #efeff4;
+  background-color: @lightGray;
 }
-
 div {
   box-sizing: border-box;
 }
-
 img {
   width: 100%;
   max-height: 100%;
   height: 100%;
 }
-
 ul,ol,li{
   list-style: none;
 }
-
-.z-ellipsis {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.z-ellipsis-2 {
-  display: -webkit-box;
-  overflow: hidden;
-  white-space: normal !important;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.z-cell-item {
-  position: relative;
-  height: 42px;
-  line-height: 42px;
-  font-size: 14px;
-  color: #404040;
-  background: #fff;
-  overflow: hidden;
-}
-
-.z-cell-item:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  border-top: 1px solid #f6f6f6 !important;
-  color: #f6f6f6;
-  transform-origin: 0 0;
-  transform: scaleY(0.5);
-}
-
-.z-cell-item .right-tip {
-  float: right;
-  font-size: 14px;
-  color: #404040;
-}
-
-.z-cell-item .weui-cell__ft:after {
-  border-color: #868686 !important;
-}
-
-.z-input-item {
-  position: relative;
-  font-size: 14px;
-  color: #404040;
-  background-color: #fff;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.z-input-item .weui-cell {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.z-input-item:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  border-top: 1px solid #f6f6f6 !important;
-  color: #f6f6f6;
-  transform-origin: 0 0;
-  transform: scaleY(0.5);
-}
-
-.z-nofixed-fullbtn {
-  margin-left: 14px;
-  margin-right: 14px;
-}
-
-.z-text-right {
-  text-align: right;
-}
-
-.z-text-color-main {
-  color: #ed7a5d !important;
-}
-
 
 //app主框架外层类
 .z-app {
@@ -129,7 +40,6 @@ ul,ol,li{
   height: 100%;
   width: 100%;
 }
-
 .z-app.hideLeft {
   opacity: 0.75;
   transform: translate3d(-100%, 0, 0);
@@ -147,7 +57,6 @@ ul,ol,li{
   height: 100%;
   overflow: hidden;
 }
-
 .z-head {
   position: fixed;
   left: 0;
@@ -155,7 +64,6 @@ ul,ol,li{
   width: 100%;
   display: block;
 }
-
 .z-foot {
   position: fixed;
   left: 0;
@@ -163,7 +71,6 @@ ul,ol,li{
   width: 100%;
   display: block;
 }
-
 .z-page .z-content {
   display: block;
   flex: 1;
@@ -171,7 +78,6 @@ ul,ol,li{
   position: relative;
   width: 100%;
 }
-
 .router-view {
   overflow: hidden;
   position: absolute;
@@ -188,6 +94,7 @@ ul,ol,li{
   backface-visibility: hidden;*/
 }
 
+// 组件切换动画
 .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
@@ -195,7 +102,6 @@ ul,ol,li{
   animation-fill-mode: both;
   /*animation: 0.25s linear;*/
 }
-
 @keyframes fadeInRight {
   from {
     opacity: 1;
@@ -208,12 +114,10 @@ ul,ol,li{
     transform: none;
   }
 }
-
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
-
 @keyframes fadeInLeft {
   from {
     opacity: 1;
@@ -226,12 +130,10 @@ ul,ol,li{
     transform: none;
   }
 }
-
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
-
 @keyframes fadeOutLeft {
   from {
     opacity: 1;
@@ -242,12 +144,10 @@ ul,ol,li{
     transform: translate3d(-100%, 0, 0);
   }
 }
-
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
 }
-
 @keyframes fadeOutRight {
   from {
     opacity: 1;
@@ -258,7 +158,6 @@ ul,ol,li{
     transform: translate3d(100%, 0, 0);
   }
 }
-
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
