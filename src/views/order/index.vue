@@ -196,7 +196,7 @@
         showModeValue: 'overlay',
         showPlacement: 'right',
         showPlacementValue: 'right',
-        typeFilter: [{value: 1, text: '早餐'}, {value: 2, text: '中餐'}, {value: 3, text: '晚餐'}]
+        typeFilter: [{key: 1, value: '全部'}, {key: 2, value: '早餐'}, {key: 3, value: '中餐'}, {key: 4, value: '晚餐'}]
       }
     },
     methods: {

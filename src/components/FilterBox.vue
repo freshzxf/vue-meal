@@ -1,7 +1,7 @@
 <style>
   .box {
     padding: 0 15px;
-    width: 260px;
+    width: 204px;
   }
 
   .demo1-item {
@@ -27,37 +27,43 @@
   <div class="box">
     <!--历史记录-->
     <div style="margin: 15px 5px 5px" class="f14 gray">餐别筛选 <i class="iconfont icon-right"></i></div>
-    <checker default-item-class="demo1-item" radio-required selected-item-class="demo1-item-selected">
-      <checker-item v-for="item in typeFilter" :value="item.value">{{item.text}}</checker-item>
+    <checker v-model="checkedVal" default-item-class="demo1-item" radio-required
+             selected-item-class="demo1-item-selected">
+      <checker-item v-for="(item, index) in typeFilter" :value="item" :key="index">{{item.value}}</checker-item>
     </checker>
 
     <!--起始日期-->
     <div style="margin: 15px 5px 5px" class="f14 gray">起始日期 <i class="iconfont icon-right"></i></div>
-    <calendar :readonly="readonly" v-model="demo1" :title="title" placeholder="按起始日期筛选" @on-show="log('show')"
+    <calendar :readonly="readonly" v-model="startCal" :title="title" placeholder="按起始日期筛选" @on-show="log('show')"
               @on-hide="log('hide')"></calendar>
 
     <!--截止日期-->
     <div style="margin: 15px 5px 5px" class="f14 gray">截止日期 <i class="iconfont icon-right"></i></div>
-    <calendar :readonly="readonly" v-model="demo1" :title="title" placeholder="按截止日期筛选"
+    <calendar :readonly="readonly" v-model="endCal" :title="title" placeholder="按截止日期筛选"
               @on-show="log('show')" @on-hide="log('hide')"></calendar>
 
+    <x-button type="primary">执行筛选</x-button>
+    <x-button type="warn">恢复默认</x-button>
   </div>
 </template>
 
 <script>
-  import {Checker, CheckerItem, Calendar} from 'vux'
+  import {Checker, CheckerItem, Calendar, XButton} from 'vux'
 
   export default {
     props: ['typeFilter'],
     components: {
       Checker,
       CheckerItem,
-      Calendar
+      Calendar,
+      XButton
     },
     data() {
       return {
-        demo1: '',
+        checkedVal: {'key': 1, 'value': '全部'},
         readonly: false,
+        startCal: '',
+        endCal: '',
         title: ''
       }
     },
